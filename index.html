@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>neon</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css">
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <a href="#"> <img src="images/logo.png"
+                    alt="neon"></a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="#"> HOME</a></li>
+                    <li><a href="#"> ABOUT US</a></li>
+                    <li><a href="#"> COURSE</a></li>
+                    <li><a href="#"> BLOG</a></li>
+                    <li><a href="#"> CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+
+        </nav>
+        <div class="text-box">
+            <h1>Worlds Biggest Universitiy</h1>
+            <p>It's My first Html & Css project Given By Brain Tech Academy. <br>
+                I complete My project In 2 hours and i submit it.
+            </p>
+            <a href="#" class="hero-btn">Visit us to know more</a>
+        </div>
+    </section>
+
+    <!-----------------------Cources section------------------------>
+    <section class="course">
+        <h1>Courses we offer</h1>
+        <p>We offers all types of Bachelor Courses</p>
+        <div class="row">
+            <div class="course-col">
+                <h3>Intermediate</h3>
+                <p>Lorem ipsum dolor sit amet. In ipsum maiores sed eligendi sunt aut dolorem deserunt qui minima illum non officiis galisum. 
+                    Qui internos voluptas et nobis iste sed velit quas. 
+                </p>
+            </div>
+            <div class="course-col">
+                <h3>Degree</h3>
+                <p>Lorem ipsum dolor sit amet. In ipsum maiores sed eligendi sunt aut dolorem deserunt qui minima illum non officiis galisum.
+                     Qui internos voluptas et nobis iste sed velit quas. 
+                </p>
+            </div>
+            <div class="course-col">
+                <h3>Post Graduation</h3>
+                <p>Lorem ipsum dolor sit amet. In ipsum maiores sed eligendi sunt aut dolorem deserunt qui minima illum non officiis galisum.
+                     Qui internos voluptas et nobis iste sed velit quas.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!--------------------Campus section------------>
+
+    <section class="campus">
+        <h1>Our global campus</h1>
+        <p>Our Historical and beautiful campuses for all students</p>
+        <div class="row">
+            <div class="campus-col">
+                <img src="images\london.png" alt="sultan">
+                <div class="layer">
+                    <h3>LANDON</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="images\newyork.png" alt="sultan">
+                <div class="layer">
+                    <h3>NEW YORK</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="images\washington.png" alt="sultan">
+                <div class="layer">
+                    <h3>WASHINGTON DC</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-----------------facilities---------------------->
+
+    <section class="facilities">
+        <h1>Our Facilities</h1>
+        <p>We Provide our Best facilities to our students</p>
+
+        <div class="row">
+            <div class="facilities-col">
+                <img src="images/library.png" alt="faheem">
+                <h3>World Class library</h3>
+                <p>Lorem ipsum dolor sit amet. In ipsum maiores sed eligendi sunt aut dolorem deserunt qui minima</p>
+            </div>
+            <div class="facilities-col">
+                <img src="images/basketball.png" alt="faheem">
+                <h3>Largest Play Grounds</h3>
+                <p>Lorem ipsum dolor sit amet. In ipsum maiores sed eligendi sunt aut dolorem deserunt qui minima</p>
+            </div>
+            <div class="facilities-col">
+                <img src="images/cafeteria.png" alt="faheem">
+                <h3>Tasty and healthy Food</h3>
+                <p>Lorem ipsum dolor sit amet. In ipsum maiores sed eligendi sunt aut dolorem deserunt qui minima</p>
+            </div>
+        </div>
+    </section>
+
+    <!--Testimonials-->
+
+    <section class="testimonials">
+        <h1>What's our Student says</h1>
+        <p>Lorem ipsum dolor sit amet In ipsum maiores.</p>
+        <div class="row">
+            <div class="testimonials-col">
+                <img src="images/user1.jpg" alt="faheem">
+                <div>
+                    <p>Lorem ipsum dolor sit amet. In ipsum maiores sed eligendi sunt aut dolorem deserunt qui minima</p>
+                    <h3>Ayesha</h3>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+            </div>
+            <div class="testimonials-col">
+                <img src="images/user2.jpg" alt="faheem">
+                <div>
+                    <p>Lorem ipsum dolor sit amet In ipsum maiores sed eligendi 
+                       sunt aut dolorem deserunt qui minima</p>
+                    <h3>Sultan Ahmad</h3>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!---------------------here i use a bit of Javascript--------------------->
+    <script>
+        var navlinks = document.getElementById('navlinks')
+        function showmenu() {
+            navlinks.style.right = '0';
+        }
+        function hidemenu() {
+            navlinks.style.right = '-200px';
+        }
+    </script>
+    <!--Our next function is about how to make a header Responsive and-->
+    <!----------------------------Javascript Ends----------------------> 
+    <script>
+        console.log('our first variable called X ')
+        X = 150
+    </script>
+    <!---- there is another thing is that we cannot write our comment in  --->
+    <!--So After puting javascript funtion our javascript are end there-->>
+</body>
+
+</html>
